@@ -1,4 +1,4 @@
-Feature: Binary Search
+Feature: ExpertCalculator
   As a user
   I want to use divide and operators to calculate numerical expressions
 

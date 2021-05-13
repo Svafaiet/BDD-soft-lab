@@ -1,6 +1,6 @@
 package specification;
 
-import binarysearch.BinarySearch;
+import calculator.ExpertCalculator;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
@@ -9,7 +9,7 @@ import static org.junit.Assert.assertTrue;
 
 public class StepDefinitions {
     ExpertCalculator calculator;
-    float result;
+    double result;
 
     @Given("I have a Calculator")
     public void initializeAlgorithm() {
@@ -26,7 +26,7 @@ public class StepDefinitions {
     }
 
     @Then("I should be told {float}")
-    public void iShouldBeTold(float expectedAnswer) {
+    public void iShouldBeTold(double expectedAnswer) {
         assertTrue(Math.abs(result - expectedAnswer) < 0.0001);
     }
 }
